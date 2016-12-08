@@ -5,6 +5,7 @@ class Root extends React.Component {
         return (
             <div>
                 <h1>Root</h1>
+                <div>{this.props.children}</div>
             </div>
         )
     }

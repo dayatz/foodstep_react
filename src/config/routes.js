@@ -1,5 +1,5 @@
 import React from 'react'
-import {Router, Route, IndexRoute} from 'react-router'
+import {Router, Route, IndexRoute, browserHistory} from 'react-router'
 
 import Root from '../pages/root.js'
 import Home from '../pages/home.js'
@@ -19,7 +19,7 @@ import Login from '../pages/login.js'
 
 
 const routes = (
-    <Router>
+    <Router history={browserHistory}>
         <Route path='/' component={Root} name='root'>
             <IndexRoute name='home' component={Home} />
 
